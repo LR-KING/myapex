@@ -10,7 +10,7 @@ namespace offsets
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const long REGION = 0x140000000;              // [Mine]          -> Region
     const long LEVEL = 0x1639960;                 // [Miscellaneous] -> LevelName
-    const long LOCAL_PLAYER = (0x020c1130);       // [Miscellaneous] -> AVC_GameMovement+0x8
+    const long LOCAL_PLAYER = (0x020c1130 + 0x8); // [Miscellaneous] -> AVC_GameMovement+0x8
     const long ENTITY_LIST = 0x1d0fe58;           // [Miscellaneous] -> cl_entitylist
     // entity
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -28,5 +28,5 @@ namespace offsets
     const long BLEEDOUT_STATE = 0x2740;             // [RecvTable.DT_Player]            -> m_bleedoutState
     const long ZOOMING = 0x1c51;                    // [RecvTable.DT_Player]            -> m_bZooming
     const long LAST_VISIBLE_TIME = 0x1a78;          // [Miscellaneous]                  -> CPlayer!lastVisibleTime
-    const long CURRENT_SHIELDS = 0x0170;             // m_shieldHealth
+    const long CURRENT_SHIELDS = 0x0170;            // m_shieldHealth
 }
